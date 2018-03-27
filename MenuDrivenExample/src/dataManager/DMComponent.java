@@ -221,4 +221,19 @@ public class DMComponent {
 			return name; 
 		}
 	}
+	
+	
+	
+	
+	
+	public void removeList(String name) { 
+		int index = getIndexForList(name); 
+		if (index != -1) 
+			lol.remove(index);
+		else { 
+			
+			IOComponent.getComponent().output("List " + name + " Does not exist .\n"); 
+			
+		}
+	}
 }
